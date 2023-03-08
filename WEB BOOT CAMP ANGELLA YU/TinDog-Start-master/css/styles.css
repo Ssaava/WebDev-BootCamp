@@ -1,0 +1,22 @@
+#title {
+  background: #ff4c68;
+}
+.row h1 {
+  font-size: min(7vw, 2.5rem);
+  font-family: "Montserrat";
+  line-height: 1.5;
+}
+.container-fluid {
+  padding: 3% 10%;
+  overflow: hidden;
+}
+.phone-img {
+  width: min(90%, 250px);
+  transform: rotate(20deg);
+  margin-bottom: -140px;
+  margin-inline: auto;
+  display: block;
+}
+.btn {
+  font-size: min(5vw, 1rem);
+}
