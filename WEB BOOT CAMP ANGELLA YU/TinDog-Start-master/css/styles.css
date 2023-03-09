@@ -2,21 +2,68 @@
   background: #ff4c68;
 }
 .row h1 {
-  font-size: min(7vw, 2.5rem);
+  font-size: clamp(2rem, 28px + 2.5vw, 4rem);
   font-family: "Montserrat";
   line-height: 1.5;
 }
-.container-fluid {
-  padding: 3% 10%;
+.container-fluid,
+#features {
+  padding: 3% 5%;
   overflow: hidden;
 }
+nav {
+  margin-bottom: 3.7rem;
+}
+.navbar-brand {
+  font-size: clamp(1.75rem, 7.5vw, 4rem);
+  padding-left: 5rem;
+}
+.navbar-toggler {
+  width: 5rem;
+  height: 5rem;
+}
+.collapse {
+  text-align: right;
+}
+.nav-link {
+  font-size: clamp(2rem, 7.5vw, 2.2rem);
+}
 .phone-img {
-  width: min(90%, 250px);
+  width: min(30vw, 25rem);
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
   transform: rotate(20deg);
-  margin-bottom: -140px;
+  margin-bottom: -9rem;
   margin-inline: auto;
   display: block;
 }
+
 .btn {
-  font-size: min(5vw, 1rem);
+  font-size: min(7vw, 1.5rem);
+}
+#features {
+  margin: 150px 0;
+  font-family: "Montserrat";
+}
+.fa-circle-check,
+.fa-bullseye,
+.fa-heart {
+  font-size: clamp(3rem, 13vw, 4rem);
+  color: #ff4c68;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.fa-circle-check:hover,
+.fa-bullseye:hover,
+.fa-heart:hover {
+  color: rgb(201, 63, 255);
+  text-shadow: 0 0 10px rgb(124, 124, 124);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+.row {
+  row-gap: 150px;
 }
